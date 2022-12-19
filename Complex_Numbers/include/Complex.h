@@ -10,6 +10,9 @@ private:
     float img;
 
 public:
+    Complex();
+    Complex(float r);
+    Complex(float r, float i);
     void print();
     float getReal();
     float getImg();
@@ -17,6 +20,8 @@ public:
     void setImg();
     void add(Complex c);
     void sub(Complex c);
+    void setComplex(float r, float i);
+    ~Complex();
 };
 
 #endif // COMPLEX_H_INCLUDED
