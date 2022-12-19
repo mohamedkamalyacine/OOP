@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1671464883 source:d:\iti_data\oop\labs\stack\main.cpp
+	<iostream>
+	"Stack.h"
+
+1671465282 d:\iti_data\oop\labs\stack\include\stack.h
+
+1671465218 source:d:\iti_data\oop\labs\stack\src\stack.cpp
+	<iostream>
+	"Stack.h"
+
