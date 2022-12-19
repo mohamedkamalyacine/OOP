@@ -16,9 +16,13 @@ int main()
     s1.display();
 
     cout<<endl;
+
     for(int i=0; i<5; i++)
     {
         cout<<s1.pop()<<endl;
     }
+
+    cout << "Objects Number = " << Stack::getCount() << endl;
+
     return 0;
 }

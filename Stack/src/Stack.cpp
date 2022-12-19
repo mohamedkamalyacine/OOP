@@ -67,3 +67,8 @@ int Stack::pop()
 
     return returnVal;
 }
+
+int Stack::getCount()
+{
+    return counter;
+}

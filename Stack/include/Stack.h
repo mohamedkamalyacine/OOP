@@ -16,6 +16,7 @@ public:
     void display();
     void push(int);
     int pop();
+    static int getCount();
 };
 
 #endif // STACK_H
