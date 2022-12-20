@@ -12,11 +12,17 @@ private:
 
 public:
     Stack(int n);
+    Stack(Stack &z);    //Copy Constructor
     ~Stack();
     void display();
     void push(int);
     int pop();
     static int getCount();
+    friend void viewContent(Stack x);     //Friend function, passing object by value
+    //friend void viewContent(Stack &x);      //Friend function, passing object by reference
 };
+
+void gotoxy(int x,int y);
+void SetColor(int ForgC);
 
 #endif // STACK_H

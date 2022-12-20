@@ -1,4 +1,7 @@
 #include <iostream>
+#include<windows.h>
+#include <dos.h>
+#include <dir.h>
 #include "Stack.h"
 
 using namespace std;
@@ -19,7 +22,22 @@ Stack::Stack(int n=5)
     }
 
     cout << "Hello from Stack's Constructor, Array size = " << arrSize << endl;
-    cout << "Number of objects = " << counter << endl;
+    //cout << "Number of objects = " << counter << endl;
+}
+
+//Copy Constructor
+Stack::Stack(Stack &z)
+{
+    top = z.top;
+    arrSize = z.arrSize;
+    s = new int[arrSize];   //New Memory Allocation
+
+    for(int i=0; i<arrSize; i++)
+    {
+        s[i] = z.s[i];
+    }
+
+    counter++;
 }
 
 Stack::~Stack()
@@ -72,3 +90,63 @@ int Stack::getCount()
 {
     return counter;
 }
+
+//Friend function, passing object by reference
+/*void viewContent(Stack &x)
+{
+    int newTop = x.top;
+    while(newTop != 0)
+    {
+        newTop--;
+        cout << x.s[newTop] << endl;
+        //newTop;
+    }
+    cout << "After calling viewContent function accepts Reference, Objects Number = " << Stack::getCount() << endl;
+}*/
+
+//Friend Function -- pass object by value
+void viewContent(Stack x)
+{
+    int newTop = x.top;
+    while(newTop != 0)
+    {
+        newTop--;
+        cout << x.s[newTop] << endl;
+        //newTop;
+    }
+    cout << "After calling viewContent function -- call by value, Objects Number = " << Stack::getCount() << endl;
+}
+
+
+
+void gotoxy(int x,int y)
+{
+    COORD coord= {0,0};
+    coord.X=x;
+    coord.Y=y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
+}
+
+void SetColor(int ForgC)
+{
+    WORD wColor;
+
+    HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+
+    //We use csbi for the wAttributes word.
+    if(GetConsoleScreenBufferInfo(hStdOut, &csbi))
+    {
+        //Mask out all but the background attribute, and add in the forgournd     color
+        wColor = (csbi.wAttributes & 0xF0) + (ForgC & 0x0F);
+        SetConsoleTextAttribute(hStdOut, wColor);
+    }
+    return;
+}
+
+
+
+
+
+
+
