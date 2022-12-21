@@ -20,6 +20,7 @@ public:
     static int getCount();
     friend void viewContent(Stack x);     //Friend function, passing object by value
     //friend void viewContent(Stack &x);      //Friend function, passing object by reference
+    void operator =(Stack s); //Operator Overloading
 };
 
 void gotoxy(int x,int y);

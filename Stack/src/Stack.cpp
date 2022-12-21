@@ -114,10 +114,21 @@ void viewContent(Stack x)
         cout << x.s[newTop] << endl;
         //newTop;
     }
-    cout << "After calling viewContent function -- call by value, Objects Number = " << Stack::getCount() << endl;
+    //cout << "After calling viewContent function -- call by value, Objects Number = " << Stack::getCount() << endl;
 }
 
+void Stack::operator =(Stack s)
+{
+    delete[] this->s;   //Delete Dynamic Allocation of the Array at the caller side
+    this->top = s.top;
+    this->arrSize = s.arrSize;
+    this->s = new int[arrSize];
 
+    for(int i=0; i<arrSize; i++)
+    {
+        this->s[i] = s.s[i];
+    }
+}
 
 void gotoxy(int x,int y)
 {

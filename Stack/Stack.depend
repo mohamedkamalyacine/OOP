@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1671527518 source:d:\iti_data\oop\labs\stack\main.cpp
+1671622058 source:d:\iti_data\oop\labs\stack\main.cpp
 	<conio.h>
 	<iostream>
 	<windows.h>
@@ -7,7 +7,7 @@
 	<dir.h>
 	"Stack.h"
 
-1671528116 d:\iti_data\oop\labs\stack\include\stack.h
+1671621647 d:\iti_data\oop\labs\stack\include\stack.h
 
 1671527474 source:d:\iti_data\oop\labs\stack\src\stack.cpp
 	<iostream>
