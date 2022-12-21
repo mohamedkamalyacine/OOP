@@ -117,7 +117,7 @@ void viewContent(Stack x)
     //cout << "After calling viewContent function -- call by value, Objects Number = " << Stack::getCount() << endl;
 }
 
-void Stack::operator =(Stack s)
+void Stack::operator =(const Stack &s)
 {
     delete[] this->s;   //Delete Dynamic Allocation of the Array at the caller side
     this->top = s.top;
