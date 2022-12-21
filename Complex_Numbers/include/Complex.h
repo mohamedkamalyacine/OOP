@@ -21,6 +21,20 @@ public:
     void add(Complex c);
     void sub(Complex c);
     void setComplex(float r, float i);
+    Complex operator +(Complex c);
+    Complex operator -(Complex c);
+    Complex operator +(int);
+    Complex operator -(int);
+    friend Complex operator +(float x, Complex c);
+    friend Complex operator -(float x, Complex c);
+    Complex operator +=(Complex c);
+    Complex operator -=(Complex c);
+    int operator ==(Complex c);
+    Complex operator ++();  //Prefix
+    Complex operator --();  //Prefix
+    Complex operator ++(int);  //Postfix
+    Complex operator --(int);  //Postfix
+    operator float();   //Casting
     ~Complex();
 };
 
