@@ -48,6 +48,25 @@ void Picture::setCircles(int cn, Circle *cptr)
     ptrCircle = cptr;
 }
 
+void Picture::paint()
+{
+    int i;
+    for(i=0; i<cNum; i++)
+    {
+        ptrCircle[i].draw();
+    }
+
+    for(i=0; i<rNum; i++)
+    {
+        ptrRect[i].draw();
+    }
+
+    for(i=0; i<lNum; i++)
+    {
+        ptrLine[i].draw();
+    }
+}
+
 Picture::~Picture()
 {
     //dtor
