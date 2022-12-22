@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1671714528 source:d:\iti_data\oop\labs\draw_shapes\main.cpp
+	<iostream>
+	<conio.h>
+	<graphics.h>
+	"Point.h"
+	"Line.h"
+	"Rect.h"
+	"Circle.h"
+	"Picture.h"
+
+1671702384 d:\iti_data\oop\labs\draw_shapes\include\point.h
+
+1671703839 source:d:\iti_data\oop\labs\draw_shapes\src\point.cpp
+	<iostream>
+	"Point.h"
+
+1671710823 source:d:\iti_data\oop\labs\draw_shapes\src\line.cpp
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Line.h"
+
+1671710823 d:\iti_data\oop\labs\draw_shapes\include\line.h
+	"Point.h"
+
+1671712346 d:\iti_data\oop\labs\draw_shapes\include\rect.h
+	"Point.h"
+
+1671712452 source:d:\iti_data\oop\labs\draw_shapes\src\rect.cpp
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Rect.h"
+
+1671712785 d:\iti_data\oop\labs\draw_shapes\include\circle.h
+	"Point.h"
+
+1671713109 source:d:\iti_data\oop\labs\draw_shapes\src\circle.cpp
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Circle.h"
+
+1671714367 source:d:\iti_data\oop\labs\draw_shapes\src\picture.cpp
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Line.h"
+	"Rect.h"
+	"Circle.h"
+	"Picture.h"
+
+1671713663 d:\iti_data\oop\labs\draw_shapes\include\picture.h
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Line.h"
+	"Rect.h"
+	"Circle.h"
+
