@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1672436448 source:d:\iti_data\oop\labs\day7\main.cpp
+	<iostream>
+	"GeoShape.h"
+
+1672436071 source:d:\iti_data\oop\labs\day7\src\geoshape.cpp
+	"GeoShape.h"
+
+1672435857 d:\iti_data\oop\labs\day7\include\geoshape.h
+
+1672436119 source:d:\iti_data\oop\labs\day7\src\triangle.cpp
+	"Triangle.h"
+
+1672436119 d:\iti_data\oop\labs\day7\include\triangle.h
+

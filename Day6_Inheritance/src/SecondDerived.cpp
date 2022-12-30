@@ -27,7 +27,7 @@ int SecondDerived::getD()
 
 int SecondDerived::productABCD()
 {
-    return getA() * getB() * getC() * d;
+    return productABC() * d;
 }
 
 SecondDerived::~SecondDerived()

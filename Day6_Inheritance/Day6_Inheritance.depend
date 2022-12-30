@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1672430482 source:d:\iti_data\oop\labs\day6_inheritance\main.cpp
+1672430764 source:d:\iti_data\oop\labs\day6_inheritance\main.cpp
 	<iostream>
 	"Base.h"
 	"Derived.h"
@@ -16,8 +16,7 @@
 1672428507 d:\iti_data\oop\labs\day6_inheritance\include\derived.h
 	"Base.h"
 
-1672430569 source:d:\iti_data\oop\labs\day6_inheritance\src\secondderived.cpp
-	"Derived.h"
+1672431612 source:d:\iti_data\oop\labs\day6_inheritance\src\secondderived.cpp
 	"SecondDerived.h"
 
 1672430569 d:\iti_data\oop\labs\day6_inheritance\include\secondderived.h
