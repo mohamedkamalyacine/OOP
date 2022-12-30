@@ -183,7 +183,7 @@ Complex::operator float()
     return real;
 }
 
-Complex operator +(float x, Complex c)
+Complex operator + (float x, Complex c)
 {
     Complex temp;
     temp.real = x + c.real;

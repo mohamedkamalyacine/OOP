@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1671714528 source:d:\iti_data\oop\labs\draw_shapes\main.cpp
+1671917479 source:d:\iti_data\oop\labs\draw_shapes\main.cpp
 	<iostream>
 	<conio.h>
 	<graphics.h>

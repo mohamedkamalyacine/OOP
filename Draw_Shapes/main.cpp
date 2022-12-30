@@ -1,4 +1,4 @@
-#include <iostream>
+//#include <iostream>
 #include <conio.h>
 #include <graphics.h>
 #include "Point.h"
@@ -22,19 +22,25 @@ int main()
     myPic.setLines(3, lArr);
 
     myPic.paint();
+
+    //circle(100, 50, 40);
     /*Line l1;
     Line l2(5, 6, 7, 8);
     Rect r1;
     Circle c1;
     Picture p1;*/
 
-    /*int gd = DETECT, gm, x, y;
-
+    //line(150, 150, 450, 200);
+    int gd = DETECT, gm;
+    //initwindow(400,300, "First sample");
     initgraph(&gd, &gm, "D:\Programs\CodeBlocks\MinGW\include");
-    setlinestyle(0, 0, 3);
-    outtextxy(300,150,"LINE()");
-    line(150, 150, 450, 200);
+    initwindow(1000,600);
+
+    setlinestyle(10, 10, 3);
+    outtextxy(300,150,"LINE(X,Y)");
+    line(200, 210, 700, 410);
     getch();
-    closegraph();*/
+
+    closegraph();
     return 0;
 }

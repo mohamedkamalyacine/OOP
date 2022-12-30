@@ -25,7 +25,7 @@ public:
     Complex operator -(Complex c);
     Complex operator +(int);
     Complex operator -(int);
-    friend Complex operator +(float x, Complex c);
+    friend Complex operator + (float x, Complex c);
     friend Complex operator -(float x, Complex c);
     Complex operator +=(Complex c);
     Complex operator -=(Complex c);
