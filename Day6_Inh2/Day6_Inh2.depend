@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1673203044 source:d:\iti_data\oop\labs\day6_inh2\src\circle.cpp
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Circle.h"
+
+1673202320 d:\iti_data\oop\labs\day6_inh2\include\point.h
+
+1673203091 d:\iti_data\oop\labs\day6_inh2\include\circle.h
+	"Point.h"
+	"Shape.h"
+
+1673202692 d:\iti_data\oop\labs\day6_inh2\include\shape.h
+
+1673202495 source:d:\iti_data\oop\labs\day6_inh2\src\line.cpp
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Line.h"
+
+1673202728 d:\iti_data\oop\labs\day6_inh2\include\line.h
+	"Point.h"
+	"Shape.h"
+
+1673202532 source:d:\iti_data\oop\labs\day6_inh2\src\point.cpp
+	<iostream>
+	"Point.h"
+
+1673202989 source:d:\iti_data\oop\labs\day6_inh2\src\rect.cpp
+	<iostream>
+	<graphics.h>
+	"Point.h"
+	"Rect.h"
+
+1673202963 d:\iti_data\oop\labs\day6_inh2\include\rect.h
+	"Point.h"
+	"Shape.h"
+
+1673202777 source:d:\iti_data\oop\labs\day6_inh2\src\shape.cpp
+	<iostream>
+	"Shape.h"
+

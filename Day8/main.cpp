@@ -158,7 +158,7 @@ int main()
     cout << "Rect Area = " << r.calculateArea() << endl;
     cout << "Triangle Area = " << t.calculateArea() << endl;
     cout << "Circle Area = " << c.calculateArea() << endl;
-    cout<<"Areas Sum = "<<sumAreas(&r,&c,&t)<<endl;
+    cout<<"Areas Sum = " << sumAreas(&r,&c,&t) << endl;
     return 0;
 
 }
